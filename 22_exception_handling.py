@@ -1,20 +1,20 @@
-# ##If we use try-except the program never crash.
-# while True:
-#     try:
-#         end = input("Want to continue the execution(Enter 'Y' for yes and 'N' for no): ").strip().upper()
-#         if end == "Y": 
-#             a = int(input("Enter first no.: "))
-#             b = int(input("Enter second no.: "))
-#             print(f"Sum is {a+b}")
-#         elif end == "N":
-#             print("Thankyou!!...")
-#             break
-#         else:
-#             print("Read the description before entering something.")
-#             continue
+##If we use try-except the program never crash.
+while True:
+    try:
+        end = input("Want to continue the execution(Enter 'Y' for yes and 'N' for no): ").strip().upper()
+        if end == "Y": 
+            a = int(input("Enter first no.: "))
+            b = int(input("Enter second no.: "))
+            print(f"Sum is {a+b}")
+        elif end == "N":
+            print("Thankyou!!...")
+            break
+        else:
+            print("Read the description before entering something.")
+            continue
 
-#     except Exception as e:
-#         print("Enter valid value!!!", e)
+    except Exception as e:
+        print("Enter valid value!!!", e)
 
 
 # ###Customise error using "raise"
@@ -38,13 +38,13 @@
 
 
 ### try-except-finally
-try:
-    a = int(input("Enter first no.: "))
-    b = int(input("Enter second no.: "))
-    div = a/b
-    print(div)
-except Exception as e:
-    print(e)
-finally: #the cose inside rthe 'finally' always executed no matter whether the try block executes completely or not
-    print("This is always executed")
+# try:
+#     a = int(input("Enter first no.: "))
+#     b = int(input("Enter second no.: "))
+#     div = a/b
+#     print(div)
+# except Exception as e:
+#     print(e)
+# finally: #the cose inside rthe 'finally' always executed no matter whether the try block executes completely or not
+#     print("This is always executed")
 
