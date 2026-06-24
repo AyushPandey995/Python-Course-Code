@@ -33,3 +33,8 @@ print(marks)
 
 marks.sort()
 print(marks)
+
+l1 = [1, 2, 3, 4]
+l2 = [6, 7, 8]
+l3 = list(zip(l1, l2))
+print(l3)
